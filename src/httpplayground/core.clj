@@ -44,9 +44,9 @@
 
 ;; just send a get
 ;; 
-;; (-> (request-to :get "https://google.com")
-;;     http/request
-;;     response)
+(-> (request-to :get "https://google.com")
+    http/request
+    response)
 
 ;; send a get and save results to a file
 ;; 

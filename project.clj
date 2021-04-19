@@ -6,7 +6,8 @@
 
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [ch.qos.logback/logback-classic "1.1.8"]
-                 [clj-http "3.10.0"]]
+                 [clj-http "3.10.0"]
+                 [cheshire "5.10.0"]]
 
   :plugins []
   :source-paths ["src"]

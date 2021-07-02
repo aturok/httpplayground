@@ -44,9 +44,9 @@
 
 ;; just send a get
 ;; 
-(-> (request-to :get "https://google.com")
-    http/request
-    response)
+(comment (-> (request-to :get "https://google.com")
+             http/request
+             response))
 
 ;; send a get and save results to a file
 ;; 
@@ -67,12 +67,14 @@
 
 ;; send document with Bearer auth
 ;; 
-;; (-> (request-to :put host "/document")
-;;     (auth "YOUR_JWT")
-;;     (assoc :multipart [{:name "file" :content (io/file (io/resource "doc1.pdf")) :mime-type "application/pdf"}])
-;;     http/request
-;;     response
-;;     :status)
+
+(comment (-> (request-to :put host "/document")
+             (auth "YOUR_JWT")
+             (assoc :multipart [{:name "file" :content (io/file (io/resource "doc1.pdf")) :mime-type "application/pdf"}])
+             http/request
+             response
+             :status))
+
 
 
 ;; send two requests in parallel, time them and capture results in a def

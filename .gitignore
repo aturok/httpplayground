@@ -14,3 +14,4 @@ tests.err.out
 .lein-env
 *.pem
 .calva
+.lsp
